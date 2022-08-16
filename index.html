@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Bootstrap API JS</title>
+</head>
+
+<body class="">
+
+
+    <div class="row text-center container mx-auto">
+        <div class="col-4">
+            <h2>Users: <span class="total__users">0</span></h2>
+
+            <ul class="users__wrapper list-unstyled">
+
+            </ul>
+        </div>
+        <div class="col-4">
+            <h2>Posts: <span class="total__posts">0</span></h2>
+
+            <ul class="posts__wrapper list-unstyled">
+
+            </ul>
+        </div>
+        <div class="col-4">
+            <h2>Comments: <span class="total__comments">0</span></h2>
+            <ul class=" list-unstyled comment__wrapper">
+
+            </ul>
+
+        </div>
+    </div>
+    <template id="user__template">
+        <li>
+            <a class="btn w-100 btn-outline-danger user__link m-1 text-black"></a>
+        </li>
+    </template>
+
+    <template id="post__template">
+        <li class="card m-1 btn w-100 btn-outline-primary ">
+            <a class="btn btn-primary  post__link"></a>
+            <p class="post__body "></p>
+        </li>
+    </template>
+
+    <template id="comment__template">
+        <li class="btn btn-outline-success text-white  card comment__link fs-5">
+            <p class="comment__name fs-4"></p>
+            <p class="comment__body  "></p>
+            <a class=" text-reset comment__email text-bg-warning "></a>
+        </li>
+    </template>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
